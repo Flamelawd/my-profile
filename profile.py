@@ -25,7 +25,6 @@ node.disk_image = "urn:publicid:IDN+emulab.net+image+emulab-ops:CENTOS7-64-STD"
 node.routable_control_ip = "true"
 
 # Install and execute a script that is contained in the repository.
-node.addService(pg.Execute(shell="/bin/bash", command="sudo chmod +x /local/repository/silly.sh"))
 node.addService(pg.Execute(shell="sh", command="/local/repository/silly.sh"))
 
 # Print the RSpec to the enclosing page.
